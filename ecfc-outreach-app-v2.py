@@ -16,7 +16,12 @@ st.set_page_config(
 # Custom CSS for Styling with ECFC Houston Colors
 st.markdown("""
 <style>
-    .main-title {
+   div[style*="background-color: white"],
+div[style*="background-color: #fff"],
+div[style*="background-color: #f8f9fa"] {
+    color: #111111 !important;
+} 
+.main-title {
         color: #102B52;
         font-size: 2.2rem;
         font-weight: bold;
