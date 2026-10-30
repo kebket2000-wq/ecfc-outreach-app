@@ -12,6 +12,19 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+# Login protection
+if not st.session_state.get("logged_in", False):
+    st.title("🔐 ECFC Houston Outreach Ministry")
+    password = st.text_input("የመግቢያ የይለፍ ቃል", type="password")
+
+    if st.button("ግባ / Login"):
+        if password == st.secrets["APP_PASSWORD"]:
+            st.session_state["logged_in"] = True
+            st.rerun()
+        else:
+            st.error("የይለፍ ቃሉ ትክክል አይደለም።")
+
+    st.stop()
 
 # Custom CSS for Styling with ECFC Houston Colors
 st.markdown("""
