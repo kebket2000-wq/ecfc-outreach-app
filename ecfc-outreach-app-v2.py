@@ -37,6 +37,7 @@ div[style*="background-color: #f8f9fa"] {
     }
     .card {
         background-color: #f8f9fa;
+        color: #111111 !important;
         border-radius: 10px;
         padding: 18px;
         border-left: 5px solid #102B52;
