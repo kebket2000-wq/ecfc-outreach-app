@@ -14,7 +14,7 @@ st.set_page_config(
 )
 # Login protection
 if not st.session_state.get("logged_in", False):
-        st.image("Screenshot_20261026_112519_ChatGPT.jpg", width=220)
+    st.image("Screenshot_20261026_112519_ChatGPT.jpg", width=220)
     st.title("🔐 ECFC Houston Outreach Ministry")
     password = st.text_input("የመግቢያ የይለፍ ቃል", type="password")
 
