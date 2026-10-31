@@ -8,7 +8,7 @@ from datetime import datetime
 # Page Configuration
 st.set_page_config(
     page_title="ECFC Houston Outreach Ministry App",
-    page_icon="✝️",
+    page_icon="Screenshot_20261026_112519_ChatGPT.jpg",
     layout="wide",
     initial_sidebar_state="expanded"
 )
